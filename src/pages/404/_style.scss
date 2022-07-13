@@ -5,6 +5,10 @@
   align-items: center;
   gap: 50px;
 
+  svg {
+    animation: zoom 0.7s infinite alternate;
+  }
+
   h1 {
     font-size: 100px;
   }
