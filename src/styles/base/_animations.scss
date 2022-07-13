@@ -6,3 +6,15 @@
     transform: rotate(30deg);
   }
 }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(1.1);
+  }
+}
