@@ -16,24 +16,18 @@ export function HorizontalHeader() {
       <nav>
         <ul>
           <li>
-            <NavLink activeclassname='active' to='/SportSee/home'>
+            <NavLink exact='true' to='/SportSee/'>
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink exact='true' activeclassname='active' to='/SportSee/'>
-              Profil
-            </NavLink>
+            <NavLink to='/SportSee/profile'>Profil</NavLink>
           </li>
           <li>
-            <NavLink activeclassname='active' to='/SportSee/setting'>
-              Réglage
-            </NavLink>
+            <NavLink to='/SportSee/setting'>Réglage</NavLink>
           </li>
           <li>
-            <NavLink activeclassname='active' to='/SportSee/community'>
-              Communauté
-            </NavLink>
+            <NavLink to='/SportSee/community'>Communauté</NavLink>
           </li>
         </ul>
       </nav>
