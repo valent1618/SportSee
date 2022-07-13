@@ -15,7 +15,7 @@ function ComingSoon({ page }) {
         <br />
         revenez plus tard !
       </h2>
-      <Link to='/SportSee/'>Voir mon dashboard</Link>
+      <Link to='/SportSee/profile'>Voir mon dashboard</Link>
     </main>
   );
 }
