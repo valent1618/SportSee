@@ -1,30 +1,30 @@
 const comingSoonPages = [
   {
-    path: 'home',
+    path: '',
     name: 'Accueil',
   },
   {
-    path: 'setting',
+    path: '/setting',
     name: 'Réglage',
   },
   {
-    path: 'community',
+    path: '/community',
     name: 'Communauté',
   },
   {
-    path: 'yoga',
+    path: '/yoga',
     name: 'Yoga',
   },
   {
-    path: 'swimming',
+    path: '/swimming',
     name: 'Natation',
   },
   {
-    path: 'bike',
+    path: '/bike',
     name: 'Vélo',
   },
   {
-    path: 'bodybuilding',
+    path: '/bodybuilding',
     name: 'Musculation',
   },
 ];

@@ -22,10 +22,10 @@ root.render(
       <HorizontalHeader />
       <VerticalHeader />
       <Routes>
-        <Route exact path='/SportSee/' element={<Dashboard />} />
+        <Route exact path='/SportSee/profile' element={<Dashboard />} />
         {comingSoonPages.map((page) => (
           <Route
-            path={`/SportSee/${page.path}`}
+            path={`/SportSee${page.path}`}
             element={<ComingSoon page={page.name} />}
             key={`Page-${page.name}`}
           />
