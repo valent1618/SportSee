@@ -1,0 +1,17 @@
+/* - Utils - */
+@import './utils/variables';
+
+/* - Base - */
+@import './base/typography';
+@import './base/animations';
+@import './base/base';
+
+/* - Components - */
+
+/* - Layouts - */
+@import '../layouts/Header/style';
+
+/* - Pages - */
+@import '../pages/Dashboard/style';
+@import '../pages/ComingSoon/style';
+@import '../pages/404/style';

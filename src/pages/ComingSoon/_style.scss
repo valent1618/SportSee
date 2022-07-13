@@ -1,0 +1,30 @@
+#ComingSoon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+
+  svg {
+    animation: balance 1s infinite alternate;
+    transform-origin: 100px 35px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  a {
+    font-size: 24px;
+    color: $colour-primary;
+  }
+
+  b {
+    color: $colour-primary;
+  }
+}

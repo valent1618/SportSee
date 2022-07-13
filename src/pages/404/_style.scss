@@ -1,0 +1,24 @@
+#Error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  a {
+    font-size: 24px;
+    color: $colour-primary;
+  }
+
+  b {
+    color: $colour-primary;
+  }
+}

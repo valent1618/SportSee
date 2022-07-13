@@ -1,13 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import 'normalize.css';
+import './styles/main.scss';
+
+import comingSoonPages from './data/comingSoonPages';
+
+import { HorizontalHeader, VerticalHeader } from './layouts/Header';
+
+import Dashboard from './pages/Dashboard';
+import ComingSoon from './pages/ComingSoon';
+import Error from './pages/404';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <HorizontalHeader />
+      <VerticalHeader />
+      <Routes>
+        <Route exact path='/SportSee/' element={<Dashboard />} />
+        {comingSoonPages.map((page) => (
+          <Route
+            path={`/SportSee/${page.path}`}
+            element={<ComingSoon page={page.name} />}
+            key={`Page-${page.name}`}
+          />
+        ))}
+        <Route path='/SportSee/*' element={<Error />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
