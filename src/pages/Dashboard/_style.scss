@@ -1,11 +1,45 @@
 #Dashboard {
-  padding: 70px 100px;
+  gap: 70px;
 
-  h1 {
-    margin-bottom: 40px;
+  .header {
+    h1 {
+      margin-bottom: 30px;
 
-    span {
-      color: $colour-primary;
+      span {
+        color: $colour-primary;
+      }
+    }
+  }
+
+  .stat {
+    display: flex;
+    gap: 30px;
+
+    .chart {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .activity {
+        width: 100%;
+        min-height: 320px;
+      }
+
+      .sessions,
+      .performance,
+      .score {
+        flex-grow: 1;
+        width: 200px;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    .substrates {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
     }
   }
 }
