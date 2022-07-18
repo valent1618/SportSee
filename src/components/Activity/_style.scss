@@ -1,0 +1,78 @@
+.activity {
+  background-color: $colour-bgLight;
+  border-radius: $radius;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .legends-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .legend {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .dot {
+          background-color: $colour-secondary;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+
+          &.dot-calories {
+            background-color: $colour-primary;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          color: #74798c;
+        }
+      }
+    }
+  }
+
+  .recharts-cartesian-axis-tick text {
+    fill: #9b9eac;
+    font-weight: 500;
+  }
+
+  .recharts-cartesian-grid-horizontal {
+    line {
+      stroke: #dedede;
+    }
+
+    line:first-child {
+      stroke-dasharray: none;
+    }
+  }
+
+  .recharts-tooltip-cursor {
+    fill: rgba(196, 196, 196, 0.5);
+  }
+
+  .custom-tooltip {
+    background-color: $colour-primary;
+    padding: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .label {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
