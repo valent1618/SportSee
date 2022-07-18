@@ -7,12 +7,17 @@
 @import './base/base';
 
 /* - Components - */
+@import '../components/Loader/style';
+@import '../components/Activity/style';
+@import '../components/Sessions/style';
+@import '../components/Performance/style';
+@import '../components/Score/style';
+@import '../components/Substrate/style';
 
 /* - Layouts - */
 @import '../layouts/Header/style';
 
 /* - Pages - */
-@import '../pages/Loader/style';
 @import '../pages/Dashboard/style';
 @import '../pages/ComingSoon/style';
 @import '../pages/404/style';
