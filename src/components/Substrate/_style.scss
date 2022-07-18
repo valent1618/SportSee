@@ -1,0 +1,47 @@
+.substrate {
+  background-color: $colour-bgLight;
+  border-radius: $radius;
+  min-width: 260px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  .icon {
+    border-radius: $radius;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.Calories {
+      background-color: rgb(255, 0, 0, 0.1);
+    }
+
+    &.Proteines {
+      background-color: rgb(74, 184, 255, 0.1);
+    }
+
+    &.Glucides {
+      background-color: rgb(253, 204, 12, 0.1);
+    }
+
+    &.Lipides {
+      background-color: rgb(253, 81, 129, 0.1);
+    }
+  }
+
+  .data {
+    h3 {
+      font-weight: 700;
+      color: $colour-secondary;
+    }
+
+    p {
+      margin: 3px 0;
+      font-size: 14px;
+      color: #74798c;
+    }
+  }
+}
