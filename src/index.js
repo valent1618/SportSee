@@ -20,18 +20,20 @@ root.render(
   <React.StrictMode>
     <Router>
       <HorizontalHeader />
-      <VerticalHeader />
-      <Routes>
-        <Route exact path='/SportSee/profile' element={<Dashboard />} />
-        {comingSoonPages.map((page) => (
-          <Route
-            path={`/SportSee${page.path}`}
-            element={<ComingSoon page={page.name} />}
-            key={`Page-${page.name}`}
-          />
-        ))}
-        <Route path='/SportSee/*' element={<Error />} />
-      </Routes>
+      <div className='flex'>
+        <VerticalHeader />
+        <Routes>
+          <Route exact path='/SportSee/profile' element={<Dashboard />} />
+          {comingSoonPages.map((page) => (
+            <Route
+              path={`/SportSee${page.path}`}
+              element={<ComingSoon page={page.name} />}
+              key={`Page-${page.name}`}
+            />
+          ))}
+          <Route path='/SportSee/*' element={<Error />} />
+        </Routes>
+      </div>
     </Router>
   </React.StrictMode>
 );
