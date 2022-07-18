@@ -19,14 +19,30 @@ code {
 
 * {
   box-sizing: border-box;
-  transition: 0.4s;
 }
 
-#root {
+// custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  // border-radius: $radius;
+  background: $colour-primary;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $colour-secondary;
+}
+
+.flex {
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
+  height: calc(100vh - 98px);
 }
 
 main {
+  overflow-y: auto;
   flex-grow: 1;
+  padding: 70px 110px;
+  display: flex;
+  flex-direction: column;
 }
