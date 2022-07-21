@@ -2,4 +2,21 @@
   overflow: hidden;
   background-color: $colour-secondary;
   border-radius: $radius;
+
+  .recharts-polar-grid-angle {
+    display: none;
+  }
+
+  .recharts-polar-angle-axis-tick text {
+    font-size: 12px;
+    font-weight: 500;
+    fill: white;
+  }
+
+  .recharts-polar-angle-axis-tick:first-child text {
+    transform: translateY(-0.7em);
+  }
+  .recharts-polar-angle-axis-tick:nth-child(4) text {
+    transform: translateY(0.7em);
+  }
 }
