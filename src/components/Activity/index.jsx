@@ -14,7 +14,7 @@ import getUserActivity from '../../functions/Get/getUserActivity';
 import Loader from '../Loader';
 
 // Create a custom tooltip
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
       <div className='custom-tooltip'>
@@ -47,7 +47,7 @@ function Activity() {
   } else if (userActivity === undefined) {
     return (
       <div className='activity'>
-        <h2>Nous ne trouvons pas l'activité...</h2>
+        <h2>Nous ne trouvons plus votre activité...</h2>
       </div>
     );
   } else {
@@ -67,7 +67,7 @@ function Activity() {
           </div>
         </div>
         <ResponsiveContainer width='100%' height='75%'>
-          <BarChart data={userActivity} barGap={8}>
+          <BarChart data={userActivity} barGap={8} barSize={7}>
             <XAxis
               dataKey='day'
               axisLine={false}
@@ -90,14 +90,12 @@ function Activity() {
               yAxisId='right'
               dataKey='kilogram'
               fill={'#282D30'}
-              barSize={7}
               radius={[5, 5, 0, 0]}
             />
             <Bar
               yAxisId='left'
               dataKey='calories'
               fill={'#ff0101'}
-              barSize={7}
               radius={[5, 5, 0, 0]}
             />
           </BarChart>
