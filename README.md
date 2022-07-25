@@ -2,7 +2,8 @@
 
 ## Description
 
-Improve sports coaching with a dynamic dashboard
+Improve sports coaching with a dynamic dashboard.
+Work with backend available at : https://github.com/valent1618/SportSeeAPI
 
 > This is the twelfth project of the formation "Développeur d'application - JavaScript React" - OpenClassrooms
 
@@ -14,19 +15,79 @@ Improve sports coaching with a dynamic dashboard
 
 <https://valent1618.github.io/SportSee/>
 
-## Available Scripts
+> Demo works with mocked data
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+### Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You need **NodeJs and NPM**
+
+### Installing
+
+1. **Clone this repo** with the command
+
+```
+git clone https://github.com/valent1618/SportSee.git
+```
+
+2. **Clone backend repo** with the command
+
+```
+git clone https://github.com/valent1618/SportSeeAPI.git
+```
+
+3. **Follow** the instruction for the backend
+
+Instruction is on the README at https://github.com/valent1618/SportSeeAPI
+
+4. **Check** if you have the latest version of **NodeJs and npm**
+
+```
+node -v && npm -v
+```
+
+Or install it : <https://nodejs.org/en/>
+
+5. **Install** all the dependencies with **NPM**
+
+```
+npm install
+```
+
+## RUN
+
+1. In the backend directory, run :
+
+```
+yarn dev
+```
+
+2. In the project directory, run:
+
+```
+npm start
+```
+
+and accept to run the app on another port with :
+
+```
+Y
+```
+
+This command runs the app in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Available Scripts
+
+In the project directory, you can run:
+
 ### `npm test`
+
+**Note: No test yet**
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -46,7 +107,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
