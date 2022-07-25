@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Substrate({ substrate }) {
   return (
     <div className='substrate'>
@@ -9,5 +11,9 @@ function Substrate({ substrate }) {
     </div>
   );
 }
+
+Substrate.propTypes = {
+  substrate: PropTypes.object,
+};
 
 export default Substrate;

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   Radar,
   RadarChart,
@@ -8,16 +9,15 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-import USER_ID from '../../data/user';
 import getUserPerformance from '../../functions/Get/getUserPerformance';
 import Loader from '../Loader';
 
-function Performance() {
+function Performance({ userID }) {
   let [userPerformance, setUserPerformance] = useState('loading');
 
   useEffect(() => {
-    getUserPerformance(setUserPerformance, USER_ID);
-  }, []);
+    getUserPerformance(setUserPerformance, userID);
+  }, [userID]);
 
   if (userPerformance === 'loading') {
     return (
@@ -54,5 +54,9 @@ function Performance() {
     );
   }
 }
+
+Performance.propTypes = {
+  userID: PropTypes.string,
+};
 
 export default Performance;

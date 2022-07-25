@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   LineChart,
   Line,
@@ -9,7 +10,6 @@ import {
   Rectangle,
 } from 'recharts';
 
-import USER_ID from '../../data/user';
 import getUserSessions from '../../functions/Get/getUserSessions';
 import Loader from '../Loader';
 
@@ -38,12 +38,12 @@ const CustomizedCursor = ({ width, points }) => {
   );
 };
 
-function Sessions() {
+function Sessions({ userID }) {
   let [userSessions, setUserSessions] = useState('loading');
 
   useEffect(() => {
-    getUserSessions(setUserSessions, USER_ID);
-  }, []);
+    getUserSessions(setUserSessions, userID);
+  }, [userID]);
 
   if (userSessions === 'loading') {
     return (
@@ -107,5 +107,9 @@ function Sessions() {
     );
   }
 }
+
+Sessions.propTypes = {
+  userID: PropTypes.string,
+};
 
 export default Sessions;

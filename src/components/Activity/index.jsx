@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   BarChart,
   Bar,
@@ -9,7 +10,6 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-import USER_ID from '../../data/user';
 import getUserActivity from '../../functions/Get/getUserActivity';
 import Loader from '../Loader';
 
@@ -31,12 +31,12 @@ const CustomTooltip = ({ active, payload }) => {
   return null;
 };
 
-function Activity() {
+function Activity({ userID }) {
   let [userActivity, setUserActivity] = useState('loading');
 
   useEffect(() => {
-    getUserActivity(setUserActivity, USER_ID);
-  }, []);
+    getUserActivity(setUserActivity, userID);
+  }, [userID]);
 
   if (userActivity === 'loading') {
     return (
@@ -104,5 +104,9 @@ function Activity() {
     );
   }
 }
+
+Activity.propTypes = {
+  userID: PropTypes.string,
+};
 
 export default Activity;
