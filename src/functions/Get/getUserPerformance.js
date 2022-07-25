@@ -5,7 +5,7 @@ import formatPerformance from '../Format/formatPerformance';
  * Get user performance
  * @param { Function } setUserPerformance from the useState hook
  * @param { String } userId
- * @return { (Object | Error) } Object {value, kind}
+ * @returns { (Array.<{value: number, kind: string}> | Error) }
  */
 function getUserPerformance(setUserPerformance, userId) {
   axios

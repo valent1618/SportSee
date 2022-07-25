@@ -6,12 +6,7 @@ import formatSubstrates from '../Format/formatSubstrates';
  * Get general user information
  * @param { Function } setUser from the useState hook
  * @param { String } userId
- * @return { (Object | Error) } Object {
- *  id,
- *  userInfos: { firstName,lastName,age },
- *  todayScore,
- *  keyData: [{ name, unit, value, icon }, ...]
- *
+ * @returns { ({id: number, userInfos: {firstName: string, lastName: string, age: number}, todayScore: number, keyData: {name: string, unit: string, value: number, icon: JSX.Element}} | Error) }
  */
 function getUser(setUser, userId) {
   axios

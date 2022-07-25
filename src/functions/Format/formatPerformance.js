@@ -1,3 +1,8 @@
+/**
+ *
+ * @param { {kind:{number: string}, data:[{value: number, kind: number}]} } data
+ * @returns {Array.<{value: number, kind: string}>} kind is in french with uppercase at the first letter
+ */
 function formatPerformance(data) {
   let performance = data.data.map((perf) => {
     let kind = data.kind[perf.kind];
@@ -27,6 +32,7 @@ function formatPerformance(data) {
     };
   });
 
+  // reverse the values to have the order of the mockup
   return performance.reverse();
 }
 

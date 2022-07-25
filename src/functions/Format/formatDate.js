@@ -1,3 +1,8 @@
+/**
+ *
+ * @param { String } date format 'yyyy-mm-dd'
+ * @returns { String } the date with the format 'dd-mm'
+ */
 function formatDate(date) {
   date = date.slice(5);
 

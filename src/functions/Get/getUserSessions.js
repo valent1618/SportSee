@@ -5,7 +5,7 @@ import formatDay from '../Format/formatDay';
  * Get user average sessions
  * @param { Function } setUserSessions from the useState hook
  * @param { String } userId
- * @return { (Array | Error) } Array [{day, sessionLength}, {day, sessionLength}, ...]
+ * @returns { (Array.<{day: string, sessionLength: number}> | Error) }
  */
 function getUserSessions(setUserSessions, userId) {
   axios

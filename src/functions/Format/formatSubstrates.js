@@ -1,3 +1,8 @@
+/**
+ *
+ * @param { {calorieCount: number, proteinCount: number, carbohydrateCount: number, lipidCount: number} } substrates
+ * @returns
+ */
 function formatSubstrates(substrates) {
   let newSubstrates = [
     {

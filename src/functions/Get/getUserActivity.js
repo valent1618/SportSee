@@ -5,7 +5,7 @@ import formatDate from '../Format/formatDate';
  * Get user activity
  * @param { Function } setUserActivity from the useState hook
  * @param { String } userId
- * @return { (Array | Error) } Array [{day, kilogram, calories}, {day, kilogram, calories}, ...]
+ * @returns { (Array.<{day: string, kilogram: number, calories: number}> | Error) }
  */
 function getUserActivity(setUserActivity, userId) {
   axios

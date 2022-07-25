@@ -1,3 +1,8 @@
+/**
+ *
+ * @param { Number } day on range 1-7
+ * @returns
+ */
 function formatDay(day) {
   switch (day) {
     case 1:
@@ -16,7 +21,7 @@ function formatDay(day) {
       return 'D';
     default:
       console.log('Day is out of range => ', day);
-      break;
+      return '?';
   }
 }
 
