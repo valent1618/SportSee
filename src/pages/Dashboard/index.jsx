@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import USER_ID from '../../data/user';
 import getUser from '../../functions/Get/getUser';
 import Loader from '../../components/Loader';
+import ChangeUser from '../../components/ChangeUser';
 import Activity from '../../components/Activity';
 import Sessions from '../../components/Sessions';
 import Performance from '../../components/Performance';
@@ -12,11 +12,12 @@ import Substrate from '../../components/Substrate';
 import Error from '../404';
 
 function Dashboard() {
+  let [userID, setUserID] = useState('12');
   let [user, setUser] = useState('loading');
 
   useEffect(() => {
-    getUser(setUser, USER_ID);
-  }, []);
+    getUser(setUser, userID);
+  }, [userID]);
 
   if (user === 'loading') {
     return (
@@ -29,6 +30,7 @@ function Dashboard() {
   } else {
     return (
       <main id='Dashboard'>
+        <ChangeUser userID={userID} setUserID={setUserID} />
         <div className='header'>
           <h1>
             Bonjour <span>{user.userInfos.firstName}</span>
@@ -41,9 +43,9 @@ function Dashboard() {
         </div>
         <section className='stat'>
           <div className='chart'>
-            <Activity />
-            <Sessions />
-            <Performance />
+            <Activity userID={userID} />
+            <Sessions userID={userID} />
+            <Performance userID={userID} />
             <Score score={user.todayScore} />
           </div>
           <div className='substrates'>
