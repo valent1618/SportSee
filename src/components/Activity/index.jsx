@@ -46,7 +46,7 @@ function Activity({ userID }) {
     );
   } else if (userActivity === undefined) {
     return (
-      <div className='activity'>
+      <div className='activity error'>
         <h2>Nous ne trouvons plus votre activité...</h2>
       </div>
     );

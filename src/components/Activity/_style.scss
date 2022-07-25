@@ -7,6 +7,11 @@
   justify-content: space-between;
   gap: 50px;
 
+  &.error {
+    align-items: center;
+    justify-content: center;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;

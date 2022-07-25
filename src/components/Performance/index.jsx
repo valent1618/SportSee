@@ -27,7 +27,7 @@ function Performance({ userID }) {
     );
   } else if (userPerformance === undefined) {
     return (
-      <div className='performance'>
+      <div className='performance error'>
         <h2>Nous ne trouvons plus votre performance...</h2>
       </div>
     );

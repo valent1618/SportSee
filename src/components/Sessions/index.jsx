@@ -53,7 +53,7 @@ function Sessions({ userID }) {
     );
   } else if (userSessions === undefined) {
     return (
-      <div className='sessions'>
+      <div className='sessions error'>
         <h2>Nous ne trouvons plus votre durée moyenne des sessions...</h2>
       </div>
     );
