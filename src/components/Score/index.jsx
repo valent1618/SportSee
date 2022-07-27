@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import { RadialBarChart, RadialBar, ResponsiveContainer } from 'recharts';
 
 function Score({ score }) {
-  const data = [{ value: score, fill: '#FF0101' }];
+  const data = [{ value: score, fill: '#FF0101', cornerRadius: 50 }];
 
   // Push 7 object with value 1 in the data for fill the center of the RadialBarChart and define the max value
   for (let i = 0; i < 8; i++) {
-    data.unshift({ value: 1, fill: 'white' });
+    data.unshift({ value: 1, fill: 'white', cornerRadius: 0 });
   }
 
   return (
@@ -29,7 +29,7 @@ function Score({ score }) {
           outerRadius='100%'
           data={data}
         >
-          <RadialBar dataKey='value' cornerRadius={50} />
+          <RadialBar dataKey='value' />
         </RadialBarChart>
       </ResponsiveContainer>
     </div>
