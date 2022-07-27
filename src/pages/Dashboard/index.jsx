@@ -36,7 +36,7 @@ function Dashboard() {
             Bonjour <span>{user.userInfos.firstName}</span>
           </h1>
           <p>
-            {user.todayScore > 0.2
+            {user.todayScore || user.score > 0.2
               ? `Félicitation ! Vous avez explosé votre objectif 👏`
               : `Encore un peu d'effort ! Vous atteindrez bientôt votre objectif 💪`}
           </p>
@@ -46,7 +46,7 @@ function Dashboard() {
             <Activity userID={userID} />
             <Sessions userID={userID} />
             <Performance userID={userID} />
-            <Score score={user.todayScore} />
+            <Score score={user.todayScore || user.score} />
           </div>
           <div className='substrates'>
             {user.keyData.map((substrate) => (
