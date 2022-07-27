@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 18,
+    "userInfos": { "firstName": "Antoine", "lastName": "Lefebvre", "age": 24 },
+    "score": 0.2,
+    "keyData": {
+      "calorieCount": 2200,
+      "proteinCount": 110,
+      "carbohydrateCount": 180,
+      "lipidCount": 100
+    }
+  }
+}
