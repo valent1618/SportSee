@@ -1,13 +1,13 @@
 {
   "data": {
     "id": 12,
-    "userInfos": { "firstName": "Karl", "lastName": "Dovineau", "age": 31 },
-    "todayScore": 0.12,
+    "userInfos": { "firstName": "Théo", "lastName": "Gibet", "age": 24 },
+    "todayScore": 0.7,
     "keyData": {
-      "calorieCount": 1930,
-      "proteinCount": 155,
-      "carbohydrateCount": 290,
-      "lipidCount": 50
+      "calorieCount": 1230,
+      "proteinCount": 185,
+      "carbohydrateCount": 230,
+      "lipidCount": 70
     }
   }
 }
