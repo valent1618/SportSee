@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+import pathData from './pathData';
 import formatDay from '../Format/formatDay';
 
 /**
@@ -9,7 +11,7 @@ import formatDay from '../Format/formatDay';
  */
 function getUserSessions(setUserSessions, userId) {
   axios
-    .get(`http://localhost:3000/user/${userId}/average-sessions`)
+    .get(pathData('sessions', userId))
     .then((response) => {
       let userSessions = response.data.data.sessions.map((session) => {
         return {

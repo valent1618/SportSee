@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+import pathData from './pathData';
 import formatDate from '../Format/formatDate';
 
 /**
@@ -9,7 +11,7 @@ import formatDate from '../Format/formatDate';
  */
 function getUserActivity(setUserActivity, userId) {
   axios
-    .get(`http://localhost:3000/user/${userId}/activity`)
+    .get(pathData('activity', userId))
     .then((response) => {
       let userActivity = response.data.data.sessions.map((session) => {
         return {

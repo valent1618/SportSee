@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+import pathData from './pathData';
 import formatPerformance from '../Format/formatPerformance';
 
 /**
@@ -9,7 +11,7 @@ import formatPerformance from '../Format/formatPerformance';
  */
 function getUserPerformance(setUserPerformance, userId) {
   axios
-    .get(`http://localhost:3000/user/${userId}/performance`)
+    .get(pathData('performance', userId))
     .then((response) => {
       setUserPerformance(formatPerformance(response.data.data));
     })

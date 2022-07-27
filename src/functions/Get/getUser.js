@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+import pathData from './pathData';
 import formatSubstrates from '../Format/formatSubstrates';
 
 /**
@@ -10,7 +11,7 @@ import formatSubstrates from '../Format/formatSubstrates';
  */
 function getUser(setUser, userId) {
   axios
-    .get(`http://localhost:3000/user/${userId}`)
+    .get(pathData('user', userId))
     .then((response) => {
       response.data.data.keyData = formatSubstrates(response.data.data.keyData);
       setUser(response.data.data);
