@@ -40,6 +40,10 @@
       flex-direction: column;
       justify-content: space-between;
       gap: 30px;
+
+      .substrate {
+        flex-grow: 1;
+      }
     }
 
     @media screen and (max-width: 1300px) {
