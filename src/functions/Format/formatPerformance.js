@@ -1,6 +1,6 @@
 /**
  *
- * @param { {kind:{number: string}, data:[{value: number, kind: number}]} } data
+ * @param { {kind:{number: string}, data:Array.<{value: number, kind: number}>} } data
  * @returns {Array.<{value: number, kind: string}>} kind is in french with uppercase at the first letter
  */
 function formatPerformance(data) {

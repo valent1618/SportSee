@@ -1,7 +1,7 @@
 /**
  *
  * @param { Number } day on range 1-7
- * @returns
+ * @returns { String } 'L' for 1 | 'M' for 2 | ...
  */
 function formatDay(day) {
   switch (day) {
