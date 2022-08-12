@@ -3,7 +3,7 @@
 ## Description
 
 Improve sports coaching with a dynamic dashboard.
-Work with backend available at : https://github.com/valent1618/SportSeeAPI
+Work with backend available at : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
 
 > This is the twelfth project of the formation "Développeur d'application - JavaScript React" - OpenClassrooms
 
@@ -34,12 +34,12 @@ git clone https://github.com/valent1618/SportSee.git
 2. **Clone backend repo** with the command
 
 ```
-git clone https://github.com/valent1618/SportSeeAPI.git
+git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
 ```
 
 3. **Follow** the instruction for the backend
 
-Instruction is on the README at https://github.com/valent1618/SportSeeAPI
+Instruction is on the README at https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
 
 4. **Check** if you have the latest version of **NodeJs and npm**
 
